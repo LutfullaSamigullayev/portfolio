@@ -1,0 +1,55 @@
+@import './font.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Gilroy-Medium", sans-serif;
+  height: 100%;
+  font-size: 18px;
+}
+
+html, .containerUz {
+  height: 100%;
+}
+
+.containerUz {
+  margin: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  /* border: 1px solid red; */
+}
+
+@media only screen and (min-width: 1260px) {
+  .containerUz {
+    max-width: 1260px;
+  }
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  @apply rotate-180
+}
+
+.section {
+  @apply py-24 w-full text-center max-[375px]:py-20
+}
+
+.title {
+  @apply font-gilroy-bold text-4xl
+}

@@ -9,8 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        "border-color": "#828282",
+        'grey': "#828282",
+        "pink": "#F6F6F6",
         background: "var(--background)",
         foreground: "var(--foreground)",
+      },
+      fontFamily: {
+        "gilroy-medium": ['Gilroy-Medium', 'sans-serif'],
+        'gilroy-bold': ['Gilroy-Bold', 'sans-serif'],
       },
     },
   },
