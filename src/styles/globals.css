@@ -68,6 +68,11 @@ html, .containerUz {
 .menuItems {
   @apply flex justify-between
 }
+.menuItems a {
+  @apply hover:text-black
+  transition-all
+
+}
 
 .menuLang {
   @apply hidden
@@ -75,9 +80,9 @@ html, .containerUz {
 
 @media only screen and (max-width: 375px) {
   .boxMenu {
-    @apply flex left-0 w-full h-full pt-5
+    @apply 
+    flex left-0 w-full h-full pt-5
     transform -translate-x-full
-    transition-transform duration-300
     bg-white
   }
   .menu {
@@ -85,7 +90,7 @@ html, .containerUz {
      text-3xl pt-10
   }
   .menuItems {
-    @apply flex-col  gap-y-10 h-fit
+    @apply flex-col  gap-y-10 h-fit 
   }
   .menuLang {
     @apply  flex flex-col justify-between
@@ -94,6 +99,7 @@ html, .containerUz {
     @apply translate-x-0 rotate-0
   }
   .open {
-    @apply transform translate-x-0
+    @apply transform translate-x-0 
+    transition-transform duration-300
   }
 }

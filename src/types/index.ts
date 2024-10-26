@@ -22,3 +22,8 @@ export interface PortfolioItems {
   desc: string;
   image: string;
 }
+
+export interface MenuProps {
+  className?: boolean;
+  onCancel: () => void; // Callback funksiyasi
+}

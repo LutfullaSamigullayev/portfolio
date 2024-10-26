@@ -1,11 +1,20 @@
-import { Icons } from "@/Icons/Icons";
-import { LangSelect, Menu } from "./components";
+"use client"
+
+import { useState } from "react";
+import { BurgerMenu, LangSelect, Menu } from "./components";
 
 export const Header = () => {
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+    console.log("toggle")
+  };
+
   return (
     <div>
-      <Menu />
+      <Menu className={isMenuOpen} onCancel={toggleMenu}/>
       <div
         id="home"
         className="containerUz py-24 max-[375px]:pt-5 max-[375px]:pb-20"
@@ -23,9 +32,7 @@ export const Header = () => {
               <LangSelect />
             </div>
           </div>
-          <button className="hidden h-fit max-[375px]:block">
-            {<Icons.burger width={30} height={30} />}
-          </button>
+          <BurgerMenu onClick={toggleMenu} />
         </div>
         <div className="w-full h-96 overflow-hidden">
           <img
