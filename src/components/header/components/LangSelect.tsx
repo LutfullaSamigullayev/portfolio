@@ -1,10 +1,10 @@
 export const LangSelect = () => {
     return (
-        <div className="vertical-text font-gilroy-bold">
+        <div className="boxLang text-grey vertical-text font-gilroy-bold transform rotate-180">
             <button>
                 UZ
             </button>
-            <span> | </span>
+            <span className="text-black"> | </span>
             <button>
                 RU
             </button>

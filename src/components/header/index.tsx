@@ -1,27 +1,14 @@
-// "use client";
-
 import { Icons } from "@/Icons/Icons";
 import { LangSelect, Menu } from "./components";
-// import { useDispatch, useSelector } from "react-redux";
-// import { RootState } from "@/redux/store";
-// import { toggleMenu } from "@/redux/slices/menuSlice";
 
 export const Header = () => {
-
-  // const dispatch = useDispatch();
-  // const isOpen = useSelector((state: RootState) => state.menu.isOpen);
-
-  // const handleToggle = () => {
-  //   dispatch(toggleMenu());
-  // };
-
 
   return (
     <div>
       <Menu />
       <div
         id="home"
-        className="containerUz py-24 max-[375px]:pt-10 max-[375px]:pb-20"
+        className="containerUz py-24 max-[375px]:pt-5 max-[375px]:pb-20"
       >
         <div className="w-full max-[375px]:flex max-[375px]:justify-between py-10">
           <div className="flex max-[375px]:flex-col justify-between items-end max-[375px]:items-start ">
