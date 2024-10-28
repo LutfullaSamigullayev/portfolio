@@ -1,20 +1,18 @@
-"use client"
+"use client";
 
 import { useState } from "react";
 import { BurgerMenu, LangSelect, Menu } from "./components";
 
 export const Header = () => {
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
-    console.log("toggle")
   };
 
   return (
     <div>
-      <Menu className={isMenuOpen} onCancel={toggleMenu}/>
+      <Menu className={isMenuOpen} onCancel={toggleMenu} />
       <div
         id="home"
         className="containerUz py-24 max-[375px]:pt-5 max-[375px]:pb-20"
