@@ -36,7 +36,7 @@ export const Menu = ({ className, onCancel }: MenuProps) => {
 
   return (
     <div className={`boxMenu ${className ? "open" : ""}`}>
-      <div className=" menu containerUz ">
+      <div className="menu containerUz">
         <ul className="menuItems">
           {menuItems.map((item) => (
             <li key={item.id} className="text-grey font-gilroy-bold">

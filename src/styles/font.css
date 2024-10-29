@@ -1,13 +1,13 @@
 @font-face {
-    font-family: 'Gilroy-Bold';
-    src: url('/fonts/Gilroy/Gilroy-Bold.ttf') format('truetype'); /* format to'g'irlandi */
-    font-weight: 700; /* Bold uchun 700 og'irligi */
-    font-style: normal;
+  font-family: "Gilroy-Bold";
+  src: url("/fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Gilroy-Medium';
-    src: url('/fonts/Gilroy/Gilroy-Medium.ttf') format('truetype'); /* format to'g'irlandi */
-    font-weight: 500; /* Medium uchun 500 og'irligi */
-    font-style: normal;
+  font-family: "Gilroy-Medium";
+  src: url("/fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }

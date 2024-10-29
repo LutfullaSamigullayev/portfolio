@@ -5,8 +5,7 @@ import { BurgerMenu, LangSelect, Menu } from "./components";
 import { useTranslations } from "next-intl";
 
 export const Header = () => {
-
-  const t = useTranslations('HeaderPage');
+  const t = useTranslations("HeaderPage");
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -26,8 +25,9 @@ export const Header = () => {
             <h1 className="text-5xl font-gilroy-bold">
               Denis <br /> Novik
             </h1>
-            <p> 
-              {t("job")}<br />
+            <p>
+              {t("job")}
+              <br />
               {t("year")}
             </p>
             <div className="block max-[375px]:hidden ">

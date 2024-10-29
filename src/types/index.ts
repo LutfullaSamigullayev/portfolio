@@ -1,7 +1,4 @@
-import { ReactNode, SVGProps } from "react";
-
-type IconProps = SVGProps<SVGSVGElement>;
-
+import { SVGProps } from "react";
 
 export interface MenuItems {
   id: number;
@@ -27,3 +24,5 @@ export interface MenuProps {
   className?: boolean;
   onCancel: () => void; // Callback funksiyasi
 }
+
+export type IconProps = SVGProps<SVGSVGElement>;

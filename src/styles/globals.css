@@ -1,8 +1,7 @@
-@import './font.css';
+@import "./font.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 :root {
   --background: #ffffff;
@@ -29,10 +28,7 @@ html, .containerUz {
 }
 
 .containerUz {
-  margin: auto;
-  padding-left: 16px;
-  padding-right: 16px;
-  /* border: 1px solid red; */
+  @apply m-auto px-4
 }
 
 @media only screen and (min-width: 1260px) {
@@ -46,60 +42,73 @@ html, .containerUz {
 }
 
 .section {
-  @apply py-24 w-full text-center max-[375px]:py-20
+  @apply py-24 w-full text-center max-[375px]:py-20;
 }
 
 .title {
-  @apply font-gilroy-bold text-4xl
+  @apply font-gilroy-bold text-4xl;
 }
 
 .boxMenu {
   @apply fixed top-0  left-1/2 z-20 
   transform -translate-x-1/2
   w-full max-w-[1228px] px-4 
-  backdrop-blur-sm 
-  from-slate-50 
+  backdrop-blur-sm from-slate-50;
 }
 
 .menu {
-  @apply !px-0 py-8 border-b border-grey
+  @apply !px-0 py-8 border-b border-grey;
 }
 
 .menuItems {
-  @apply flex justify-between
+  @apply flex justify-between flex-wrap gap-x-2;
 }
-.menuItems a {
-  @apply hover:text-black
-  transition-all
 
+.menuItems a {
+  @apply hover:text-black transition-all;
 }
 
 .menuLang {
-  @apply hidden
+  @apply hidden;
+}
+
+.boxLang {
+  @apply text-grey font-gilroy-bold transform rotate-180;
+}
+
+.lang {
+  @apply cursor-pointer transition-all hover:text-black;
+}
+
+.lang.active {
+  @apply text-black cursor-default;
+}
+
+.separator {
+  @apply text-black select-none;
 }
 
 @media only screen and (max-width: 375px) {
   .boxMenu {
-    @apply 
-    flex left-0 w-full h-full pt-5
+    @apply flex left-0 w-full h-full pt-5
     transform -translate-x-full
-    bg-white
+    bg-white;
   }
   .menu {
     @apply border-none flex justify-between !m-0 w-full
-     text-3xl pt-10
+     text-3xl pt-10;
   }
   .menuItems {
-    @apply flex-col  gap-y-10 h-fit 
+    @apply flex-col  gap-y-10 h-fit;
   }
   .menuLang {
-    @apply  flex flex-col justify-between
+    @apply flex flex-col justify-between;
   }
   .boxLang {
-    @apply translate-x-0 rotate-0
+    @apply translate-x-0 rotate-0;
   }
   .open {
     @apply transform translate-x-0 
-    transition-transform duration-300
+    transition-transform duration-300;
   }
 }
