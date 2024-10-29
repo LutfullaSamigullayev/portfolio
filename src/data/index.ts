@@ -1,33 +1,4 @@
-import { Portfolio } from './../components/portfolio/index';
-import { MenuItems, PortfolioItems } from "@/types";
-
-export const menuItems: MenuItems[] = [
-  {
-    id: 1,
-    link: "#home",
-    title: "Home",
-  },
-  {
-    id: 2,
-    link: "#about",
-    title: "About me",
-  },
-  {
-    id: 3,
-    link: "#skills",
-    title: "Skills",
-  },
-  {
-    id: 4,
-    link: "#portfolio",
-    title: "Portfolio",
-  },
-  {
-    id: 5,
-    link: "#contacts",
-    title: "Contacts",
-  },
-];
+import { PortfolioItems } from "@/types";
 
 export const portfolioItems: PortfolioItems[] = [
   {

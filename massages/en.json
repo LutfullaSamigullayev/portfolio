@@ -1,7 +1,34 @@
 {
+  "HeaderPage": {
+    "job": "UX | UI designer",
+    "year": "24 years old, Minsk"
+  },
+  "Menu": {
+    "home": "Home",
+    "about": "About me",
+    "skills": "Skills",
+    "porftolio": "Portfolio",
+    "contacts": "Contacts"
+  },
   "AboutPage": {
-    "title": "Hello world!",
-    "about-title": "About me",
-    "about": "Go to the about page"
+    "title": "About me",
+    "name": "Hi, I'm {name} - UX/UI designer from Minsk.",
+    "interes": "I'm interested in design and everything connected with it.",
+    "student": "I'm studying at courses 'Web and mobile design interfaces' in IT-Academy.",
+    "implement": "Ready to implement excellent projects with wonderful people."
+  },
+  "SkillsPage": {
+    "title": "Skills",
+    "work": "I work in such programs as:"
+  },
+  "PortfolioPage": {
+    "title": "Portfolio"
+  },
+  "ContactsPage": {
+    "title": "Contacts",
+    "chat": "Want to know more or just chat?",
+    "wellcome": "You are welcome!",
+    "send": "Send massage",
+    "like": "Like me on"
   }
 }

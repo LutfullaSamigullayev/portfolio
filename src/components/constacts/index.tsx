@@ -1,19 +1,22 @@
 import { Icons } from "@/Icons/Icons"
+import { useTranslations } from "next-intl";
 
 export const Contacts = () => {
+  const t = useTranslations('ContactsPage');
+
     return (
         <div id="contacts" className="containerUz section">
-            <h1 className="title">Contacts</h1>
-            <p className="py-5">Want to know more or just chat? <br />
-            You are welcome!</p>
-            <button className="bg-black text-white font-gilroy-bold rounded-full px-6 py-3 max-[375px]:w-full">Send massage</button>
+            <h1 className="title">{t("title")}</h1>
+            <p className="py-5">{t("chat")}<br />
+            {t("wellcome")}</p>
+            <button className="bg-black text-white font-gilroy-bold rounded-full px-6 py-3 max-[375px]:w-full">{t("send")}</button>
             <div className="flex items-center gap-x-16 justify-center pt-20 max-[375px]:pt-12 max-[375px]:gap-x-1 max-[375px]:justify-between">
                 <Icons.linkedIn />
                 <Icons.instagram />
                 <Icons.behance />
                 <Icons.dribble />
             </div>
-            <p className="pt-10 text-grey">Like me on <br />
+            <p className="pt-10 text-grey">{t("like")}<br />
             LinkedIn, Instagram, Behance, Dribble</p>
         </div>
     )

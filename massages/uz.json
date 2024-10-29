@@ -1,7 +1,34 @@
 {
-  "AboutPage": {
-    "title": "Salom dunyo!",
-    "about-title": "Men haqimda",
-    "about": "Men haqimda sahifasiga o'ting"
+  "HeaderPage": {
+    "job": "UX | UI dizayneri",
+    "year": "24 yosh, Minsk"
+  },
+  "Menu": {
+    "home": "Asosiy",
+    "about": "Men haqimda",
+    "skills": "Ko'nikmalar",
+    "porftolio": "Portfel",
+    "contacts": "Kontaktlar"
+  },
+ "AboutPage": {
+    "title": "Men haqimda",
+    "about": "Salom, men {name}man - Minskdan UX/UI dizayneri.",
+    "interes": "Men dizayn va u bilan bog'liq barcha narsalarga qiziqaman.",
+    "student": "Men IT-Akademiyasidagi “Veb va mobil dizayn interfeyslari” kurslarida tahsil olaman.",
+    "implement": "Ajoyib odamlar bilan ajoyib loyihalarni amalga oshirishga tayyor."
+  },
+  "SkillsPage": {
+    "title": "Ko'nikmalar",
+    "work": "Men shu dasturlarda ishlayman:"
+  },
+  "PortfolioPage": {
+    "title": "Portfel"
+  },
+  "ContactsPage": {
+    "title": "Kontaktlar",
+    "chat": "Ko'proq bilishni xohlaysizmi yoki shunchaki suhbatlashmoqchimisiz?",
+    "wellcome": "Xush kelibsiz!",
+    "send": "Xabar yuborish",
+    "like": "Menga like bosing"
   }
 }

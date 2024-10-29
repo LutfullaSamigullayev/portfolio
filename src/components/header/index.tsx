@@ -2,8 +2,12 @@
 
 import { useState } from "react";
 import { BurgerMenu, LangSelect, Menu } from "./components";
+import { useTranslations } from "next-intl";
 
 export const Header = () => {
+
+  const t = useTranslations('HeaderPage');
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -22,9 +26,9 @@ export const Header = () => {
             <h1 className="text-5xl font-gilroy-bold">
               Denis <br /> Novik
             </h1>
-            <p>
-              UX | UI designer <br />
-              24 years old, Minsk
+            <p> 
+              {t("job")}<br />
+              {t("year")}
             </p>
             <div className="block max-[375px]:hidden ">
               <LangSelect />
