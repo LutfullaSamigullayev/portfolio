@@ -8,9 +8,12 @@ export const SkillCard = ({ title, icon, rating }: SkillItems) => {
       <div>
         {[...Array(5)].map((_, index) => (
           <span
-            className="text-3xl px-1"
+            className={`text-3xl px-1 ${
+              index < rating
+                ? "text-black dark:text-white"
+                : "text-gray-300 dark:text-gray-600"
+            }`}
             key={index}
-            style={{ color: index < rating ? "#000" : "#ccc" }}
           >
             ★
           </span>

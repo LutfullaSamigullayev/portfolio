@@ -8,7 +8,7 @@ export const About = async () => {
   const t = await getTranslations("AboutPage"); // agar funksiya async bo'lsa getTranstaion ishlatiladi await bilan
 
   return (
-    <div id="about" className="bg-pink">
+    <div id="about" className="bg-pink dark:bg-zinc-900">
       <div className="containerUz section">
         <h1 className="title">{t("title")}</h1>
         <br />

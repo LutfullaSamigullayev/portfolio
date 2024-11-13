@@ -3,15 +3,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #171717;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #0a0a0a;
+      --foreground: #ededed;
+    }
   }
 }
 
@@ -23,12 +25,13 @@ body {
   font-size: 18px;
 }
 
-html, .containerUz {
+html,
+.containerUz {
   height: 100%;
 }
 
 .containerUz {
-  @apply m-auto px-4
+  @apply m-auto px-4;
 }
 
 @media only screen and (min-width: 1260px) {
@@ -65,7 +68,7 @@ html, .containerUz {
 }
 
 .menuItems a {
-  @apply hover:text-black transition-all;
+  @apply hover:text-black transition-all dark:hover:text-white;
 }
 
 .menuLang {
@@ -77,22 +80,22 @@ html, .containerUz {
 }
 
 .lang {
-  @apply cursor-pointer transition-all hover:text-black;
+  @apply cursor-pointer transition-all hover:text-black dark:hover:text-white;
 }
 
 .lang.active {
-  @apply text-black cursor-default;
+  @apply text-black cursor-default dark:text-white;
 }
 
 .separator {
-  @apply text-black select-none;
+  @apply text-black select-none dark:text-gray-500;
 }
 
 @media only screen and (max-width: 375px) {
   .boxMenu {
     @apply flex left-0 w-full h-full pt-5
     transform -translate-x-full
-    bg-white;
+    bg-white dark:bg-zinc-900;
   }
   .menu {
     @apply border-none flex justify-between !m-0 w-full

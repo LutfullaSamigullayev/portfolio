@@ -12,7 +12,7 @@ export const Contacts = () => {
         <br />
         {t("wellcome")}
       </p>
-      <button className="bg-black text-white font-gilroy-bold rounded-full px-6 py-3 max-[375px]:w-full hover:text-opacity-60 transition-all ">
+      <button className="bg-black text-white  dark:bg-white dark:text-black font-gilroy-bold rounded-full px-6 py-3 max-[375px]:w-full hover:text-opacity-60 transition-all ">
         {t("send")}
       </button>
       <div className="flex items-center gap-x-16 justify-center pt-20 max-[375px]:pt-12 max-[375px]:gap-x-1 max-[375px]:justify-between">
