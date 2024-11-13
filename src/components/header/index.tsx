@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { BurgerMenu, LangSelect, Menu } from "./components";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export const Header = () => {
   const t = useTranslations("HeaderPage");
@@ -37,9 +38,11 @@ export const Header = () => {
           <BurgerMenu onClick={toggleMenu} />
         </div>
         <div className="w-full h-96 overflow-hidden">
-          <img
+          <Image
             src="/header.jpg"
             alt="author"
+            width={1228}
+            height={384}
             className="w-full h-full object-cover object-center"
           />
         </div>
