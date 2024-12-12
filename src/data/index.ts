@@ -1,4 +1,32 @@
-import { PortfolioItems } from "@/types";
+import { MenuItems, PortfolioItems } from "@/types";
+
+export const menuItems: MenuItems[] = [
+  {
+    id: 1,
+    link: "#home",
+    title: "home",
+  },
+  {
+    id: 2,
+    link: "#about",
+    title: "about",
+  },
+  {
+    id: 3,
+    link: "#skills",
+    title: "skills",
+  },
+  {
+    id: 4,
+    link: "#portfolio",
+    title: "porftolio",
+  },
+  {
+    id: 5,
+    link: "#contacts",
+    title: "contacts",
+  },
+];
 
 export const portfolioItems: PortfolioItems[] = [
   {
